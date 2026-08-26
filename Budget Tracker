@@ -3,4 +3,14 @@ expense = int(input("What is your current monthly expense?"))
 
 budget = income - expense
 
-print(budget)
+if budget >= 0:
+    print(f"SUMMARY")
+    print(f"Your income is £{income}")
+    print(f"Your expense is £{expense}")
+    print(f"Your total budget is £{budget}")
+
+    print("What would you like to do")
+
+else:
+    budget = abs(budget)
+    print(f"You are in overdraft by £{budget}")
