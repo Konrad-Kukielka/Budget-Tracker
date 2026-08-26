@@ -1,1 +1,6 @@
-print("budget tracker")
+income = int(input("What is your current monthly income?"))
+expense = int(input("What is your current monthly expense?"))
+
+budget = income - expense
+
+print(budget)
